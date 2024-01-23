@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-3 Hockeys</title>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awsome -->
+    <script src="https://kit.fontawesome.com/aeffe322e9.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+               }
+               .primary-clr{
+                color: #FF4240;
+                             }
+               .font-clr{
+                color: #131318;
+               }
+    </style>
+
 </head>
-<body>
-    
+<!--  bg-base-100 -->
+
+<body style="background-color: #fff;">
+    <header>
+        <nav class="pt-[20px] pl-2 pr-2 lg:pl-20 lg:pr-20 lg:pt-[40px]">
+            <div class="navbar font-clr">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="primary-clr">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-sm font-bold">
+                        <li class="primary-clr"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn bg-[#FF4240] text-white w-31 h-10 lg:w-[120px] lg:h-[30px]">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <Section class="Banner pt-[20px] pl-2 pr-2 lg:pl-20 lg:pr-20 lg:pt-[40px]">
+            <div class="carousel w-full h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/Images/1.png" class="w-[100%]" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                 
+                
+              </div>
+        </Section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
